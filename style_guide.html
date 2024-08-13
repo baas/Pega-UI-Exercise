@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="King Lam">
+	<title>Styleguid for Pegaworld UI excersise</title>
+	<!-- PAGE STYLING -->
+    <link rel="stylesheet"  type="text/css"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <style type="text/css">
+    	#logo {
+    		margin-top: 20px;
+    	}
+
+    	.hero {
+    		background-color: #337ab7;
+    		margin-bottom: 20px;
+    		color: #fff;
+    	}
+
+    	.title-jump{
+    		text-decoration: none !important;
+    	}
+
+    	.title-jump:hover{
+    		text-decoration: none !important;
+    		color: #337ab7;
+    	}
+
+    	.btn-pega {
+	color: #fff;
+    background-color: #0092f8;
+    border-color: #0092f8;
+}
+
+.btn-pega:hover {
+	color: #fff !important;
+    background-color: #0074c5;
+    border-color: #006ebb;
+}
+
+.btn-pega:active {
+	outline: 0;
+    background-image: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+    box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+    color: #fff !important;
+}
+
+
+.btn-pega:focus {
+    color: #fff !important;
+}
+	    .fakebar {
+		background: #ffffff !important;
+		border-bottom: 1px solid #CCCCCC !important;
+		margin-bottom: 0px !important;
+		padding-left: 10px;
+		}
+
+		.fakebar a {
+			color: #000000 !important;
+			font-size: 16px;
+			font-weight: 500;
+		}
+
+		 .fakebar li.active a{
+ 	border-bottom: 6px solid #0092f8;
+ }
+    	.hero h2 {
+    		font-size: 16px;
+    	}
+
+    	.border-bot { border-bottom: 1px solid #ccc; padding-top: 20px; padding-bottom: 20px;}
+
+    	.h1-title {
+    		font-size: 16px;
+	    font-weight: normal;
+	    color: #999999;
+	    display: inline-block;
+	    }
+
+	    .p-sub {
+    	font-size: 12px;
+		color: #999999;
+		display: inline-block;
+	    }
+
+	    .regular-text {
+	    	font-size: 14px;
+	    	color: #000;
+	    }
+
+	    .inline {display: inline;}
+	    #header-title {
+	display: inline-block; float: left
+}
+
+#header-title h1 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #999999;
+    display: inline-block;
+}
+
+#header-title h1, #header-title p{
+	margin-bottom: 0px;
+}
+#header-title p{
+	margin-top: 0px;
+	font-size: 12px;
+	color: #999999;
+}
+.agenda-label {
+	background-color: #0092f8;
+	color: #fff;
+	text-align: center;
+	display: block;
+	width: 100%
+	border-bottom: 1px solid #ccc;
+}
+
+
+.agenda-col {
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+
+.agenda-item {
+	position: relative;
+	border-bottom: 1px solid #ccc;
+}
+
+.agenda-eventicon {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.agenda-content {
+	padding: 10px 5px 10px 35px !important;
+	font-size: 10pt;
+}
+
+.agenda-content-normal {
+	padding: 10px 5px 10px 35px !important;
+}
+
+.agenda-item .agenda-time, .agenda-item .agenda-title, .agenda-item .agenda-place  {
+	display: block;
+}
+	    .agenda-time {
+			color: #7f8c8d;
+			font-weight: 500;
+			font-size: 10pt;
+		}
+
+		.agenda-title {
+			color: #000;
+			font-weight: normal;
+			font-size: 10pt;
+		}
+		.agenda-place {
+			color: #7f8c8d;
+			font-weight: normal;
+			font-size: 10pt;
+		}
+
+		.link {
+			color: #000;
+			font-size: 16px;
+			font-weight: 500;
+		}
+
+		.link:hover {
+			color: #0092f8;
+		}
+
+		.box-pega-blue {
+			text-align: center;
+			height: 40px;
+			width: 100%;
+			background-color: #0092f8;
+			border: 1px solid #ccc;
+			line-height: 250%
+		}
+
+		.box-grey {
+			text-align: center;
+			height: 40px;
+			width: 100%;
+			background-color: #7f8c8d;
+			border: 1px solid #ccc;
+			line-height: 250%
+		}
+
+		.box-black {
+			text-align: center;
+			height: 40px;
+			width: 100%;
+			background-color: #000000;
+			border: 1px solid #ccc;
+			line-height: 250%;
+			color: #ffffff;
+		}
+
+		.box-white {
+			text-align: center;
+			height: 40px;
+			width: 100%;
+			background-color: #ffffff;
+			border: 1px solid #ccc;
+			line-height: 250%
+		}
+
+		.bordered {
+			border: 1px solid #ccc;
+			padding: 10px;
+		}
+		.col-grid {
+			height: 50px; 
+			background-color: #cccccc;
+			border: 1px solid #000000;
+		}
+
+.eventicon {
+	display: block;
+	padding: 2px;
+	width: 16px;
+	height: 16px;
+	font-size: 12px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 100%;
+
+}
+
+.eventicon-travel {
+	background-color: #7f8c8d;
+	color: #ffffff;
+}
+
+.eventicon-break {
+	background-color: #16a085;
+	color: #ffffff;
+}
+
+.eventicon-pega {
+	background-color: #0092f8;
+	color: #ffffff;
+}
+
+.eventicon-mobile {
+	background-color: #000;
+	color: #ffffff;
+}
+
+.eventicon-user {
+	background-color: #d35400;
+	color: #ffffff;
+}
+
+.eventicon-customer {
+	background-color: #8e44ad;
+	color: #ffffff;
+}
+
+.eventicon-other {
+	background-color: #34495e;
+	color: #ffffff;
+}
+
+.eventicon-hidden {
+	background-color: #fff !important;
+	color: red;
+	border: 1px dashed red;
+
+}
+
+.icon-text {
+	font-size: 10pt;
+}
+
+.filter-wrap {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.filter-wrap .eventicon { display: inline-block; }
+
+/*modal styling*/
+
+
+
+
+
+
+.modal-pega {
+	width: 300px !important;
+}
+.modal-content{
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important; 
+} 
+
+.modal-header{
+	padding: 0px !important;
+}
+
+.modal-header h5{
+	padding-top: 0px !important;
+}
+
+.modal-title {
+	display: inline-block;
+	margin-bottom: 0px !important;
+	float: left;
+
+}
+.modal-title h5{
+	margin: 10px 10px 0px 10px;
+	height: 20px;
+	font-size: 14px;
+	line-height: 80%;
+
+}
+
+.modal-dismiss {
+	margin-bottom: 0px !important;
+	float: left;
+	display: inline-block;
+	float: right;
+	width: 30px;
+	height: 30px;
+	border-left: 1px solid #ccc;
+	text-align: center;
+}
+
+.modal-dismiss h3 {
+	margin-top: 3px;
+	font-weight: normal;
+}
+
+.modal-dismiss:hover, .modal-footer:hover {
+	background-color: #0092f8;
+}
+
+.modal-dismiss:hover h3, .modal-footer:hover h5 {
+	color: #fff;
+}
+
+.modal-footer {
+	padding: 5px !important;
+	text-align: center !important; 
+}
+
+.modal-footer h5 {
+	margin: 0px !important;
+}
+    </style> 
+</head>
+
+<body>
+	<div id="wrapper">
+
+		<header class="navbar navbar-pega navbar-top" id='head'>
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+				<img id="logo" alt="Pega logo" src="https://www.pega.com/profiles/pegasystems/themes/custom/pegas/logo.png">
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+
+		  </div><!-- /.container-fluid -->
+		</header>
+
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12 hero">
+					<h1>Style guide for Pega UI exercise</h1>
+					<h2>Author: King Lam</h2>
+					<p>This style guide is not part of the actual UI exercise. The guide is meant to give the reader an overview of the design elements used in the actual exercise output (mailed together with this file). </p>
+				</div>
+				<div class="col-lg-3 " id="sidebar">
+					<h4>Design patterns</h4>
+					<div class="list-group">
+					  <a href="#typography" class="list-group-item">Typography</a>
+					  <a href="#colours" class="list-group-item">Colours</a>
+					  <a href="#layout" class="list-group-item" id="layout-btn">Layout</a>
+					  <a href="#header" class="list-group-item">Header</a>
+					  <a href="#buttons" class="list-group-item">Buttons</a>
+					  <a href="#modal" class="list-group-item">Modal</a>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					
+
+					<div class="row">
+						<div class="col-lg-12 "><a name="typography" class="title-jump"><h3>Typography</h3></a></div>
+						<div class="col-lg-12 border-bot"><h1 class="inline h1-title">Header h1 title </h1>  <span class="pull-right">16px / 14px @ max-width: 768px</span></div>
+						<div class="col-lg-12 border-bot"><p class="inline link">Top navigation Links</p>  <span class="pull-right">16px / 14px @max-width: 960px</span></div>
+						<div class="col-lg-12 border-bot"><p class="inline p-sub">Header p subtitle </p>  <span class="pull-right">12px </span></div>
+						<div class="col-lg-12 border-bot"><p class="inline reg-text">Icon filter text</p>  <span class="pull-right">10pt  / 9pt in compact view</span></div>
+						<div class="col-lg-12 border-bot"><p class="inline agenda-time">Event item time: 00:00 </p>  <span class="pull-right">10pt  / 9pt in compact view</span></div>
+						<div class="col-lg-12 border-bot"><p class="inline agenda-title">Event title: PegaWORLD</p>  <span class="pull-right">10pt / 9pt in compact view</span></div>
+						<div class="col-lg-12 border-bot"><p class="inline agenda-place">Event place: Crystal L </p>  <span class="pull-right">10pt  / 9pt in compact view</span></div>
+						<!-- colours -->
+						<div class="col-lg-12 "><a name="colours" class="title-jump"><h3>Colours</h3></a></div>
+						<div class="col-lg-12 border-bot">
+							<div class="row">
+								<div class="col-lg-12"><h5>Primairy colours</h5></div>
+								<div class="col-lg-4">
+									<div class="box-pega-blue">
+											#0092f8 
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="box-grey">
+											#7f8c8d 
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="box-black">
+											#FFFFFF 
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-12"><h5>Backgrounds and borders</h5></div>
+								<div class="col-lg-4">
+									<div class="box-white">
+											background: #ffffff | border: #cccccc
+									</div>
+								</div>
+								
+							</div>
+
+							<div class="row">
+								<div class="col-lg-12"><h5>Text</h5></div>
+								<div class="col-lg-4">
+									Normal text #000000
+								</div>
+								<div class="col-lg-4">
+									<p class="agenda-time">Event time and event place #7f8c8d</p>
+								</div>
+								
+							</div>
+						</div>
+						<!-- layout -->
+
+						<div class="col-lg-12 "><a name="layout" class="title-jump"><h3>Layout</h3></a></div>
+						<div class="col-lg-12 border-bot">
+							<h4>Grid</h4>
+							<p>The layout of the page is build using the bootstrap 3 vertical 12-column grid. I removed the 30px gutters that is in the default bootstrap framework. The framework offers a good foundation for responsive design fit for this exercise. The breaking points are set to a "max-width: 768px" for mobiles, "max-width: 992px" for tablets and "992px and up for desktops and larger desktops at 1200px". I've set a certain css content to break at 960px which I think is suitable for this design. </p>
+						
+							<div class="col-lg-12" style="margin-bottom: 20px;">
+								
+						
+									<div class="row">
+										<div class="col-lg-1 col-grid"> 1 </div>
+										<div class="col-lg-1 col-grid"> 1 </div>
+										<div class="col-lg-1 col-grid"> 1 </div>
+										<div class="col-lg-1 col-grid"> 1 </div>
+										<div class="col-lg-1 col-grid"> 1 </div>
+										<div class="col-lg-1 col-grid"> 1 </div>
+										<div class="col-lg-1 col-grid"> 1 </div>
+										<div class="col-lg-1 col-grid"> 1 </div>
+										<div class="col-lg-1 col-grid"> 1 </div>
+										<div class="col-lg-1 col-grid"> 1 </div>
+										<div class="col-lg-1 col-grid"> 1 </div>
+										<div class="col-lg-1 col-grid"> 1 </div>
+									</div>
+
+								</div>
+
+							<h4>Filter</h4>
+							<p>The .filter-bar is a full width div containing the three type of elements: The button to launch the #filter modal, the .filter-wrap divs with the .eventicon and .icon-text and lastly the 960px+ visible compact view radio toggle buttons.</p>
+								<h5>Eventicons</h5>
+								<p>Eventicons are square divs with a centered letter within that serve as a "type of event" icon. There are 7 type of eventicons and each has a unique colour and letter. The desktop view offers the .icon-text along with the eventicon in the filter bar to serve as a legend.</p>
+								<div class="bordered">
+								<div class="filter-wrap"> 
+									<span class="eventicon eventicon-travel eventicon-filter-travel">T</span>
+									<span class="icon-text hide-mobile ">Travel &amp; Registration</span>
+								</div>
+								<div class="filter-wrap"> 
+									<span class="eventicon eventicon-break eventicon-filter-break">B</span>
+									<span class="icon-text hide-mobile">Breaks &amp; Meals </span>
+								</div>
+								<div class="filter-wrap"> 
+									<span class="eventicon eventicon-pega eventicon-filter-pega">P</span>
+									<span class="icon-text hide-mobile">PegaWorld main events </span>
+								</div>
+								<div class="filter-wrap"> 
+									<span class="eventicon eventicon-mobile eventicon-filter-mobile">M</span>
+									<span class="icon-text hide-mobile">Mobile</span>
+								</div>
+								<div class="filter-wrap"> 
+									<span class="eventicon eventicon-user eventicon-filter-user">U</span>
+									<span class="icon-text hide-mobile">User Centered Design</span>
+								</div>
+								<div class="filter-wrap"> 
+									<span class="eventicon eventicon-customer eventicon-filter-customer">C</span>
+									<span class="icon-text hide-mobile">Customer Centricity</span>
+								</div>
+								<div class="filter-wrap"> 
+									<span class="eventicon eventicon-other eventicon-filter-other">O</span>
+									<span class="icon-text hide-mobile">Other</span>
+								</div>
+								<div class="filter-wrap"> 
+									<span class="eventicon eventicon-hidden eventicon-filter-other">O</span>
+									<span class="icon-text hide-mobile">Hidden eventicon styling</span>
+								</div>
+								</div>
+								<h4>Event columns</h4>
+								<p>There are 5 event columns .agenda-col one for each event day. All of them have a 2-grid column in desktop view except for #wednesday-col which has a double sized column. All of them will be shown as a full width 12-grid column below the 992px breakpoint.<br/>
+															<br/>
+								All columns consist mainly of an .agenda-label with the date specified and an .agenda-item div that wraps the the event content such as the .agenda-time, .agenda-title and .agenda-place.
+								</p>
+
+								<div id="wednesday-col" class="col-lg-12 agenda-col" style="margin-bottom:20px;">
+								<div class="row">
+									<div class="col-lg-12 col-xs-12 agenda-label">Wednesday June 10</div>
+									<div class="col-lg-12 col-md-12 agenda-item content-break">
+										<div class="row">
+											<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10  agenda-content agenda-content-normal">
+												<div class="agenda-eventicon">
+													<span class="eventicon eventicon-break">B</span>
+												</div>
+												<span class="agenda-time">07:00 - 08:00</span>
+												<span class="agenda-title">Breakfast</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								</div>
+
+								<h4>Compact view</h4>
+								<p>The compact view toggle is a desktop only feature to help presenters fit the entire week agenda on a screen/projector. This feature is available up to the 992px breakpoint. What this feature does is overwrite the padding of .agenda-content (padding: 10px 5px 10px 35px !important;) to (padding: 5px 5px 5px 35px !important;) using the agenda-content-compact class. It also adds .compact-inline class to have the .agenda-place shown inline of the .agenda-title. Lastly it downsize the font within agenda-content to 12px.
+								</p>
+								
+
+
+							</div> <!--/.border-bot-->
+							<div class="col-lg-12 "><a name="header" class="title-jump"><h3>Header</h3></a></div>
+							<div class="col-lg-12 border-bot">
+								<p> The header .navbar is the top div that carries three elements: The #logo image which is the only external linked file, the Title and the navigation links.
+								</p>
+
+								<h4>The logo</h4>
+								<p>The #logo is external hosted. This is the only external hosted file that is linked to the document. The element will be hidden in case of an error upon retrieval. The logo has a set height of 40px.<br/>
+								<img class="bordered" id="logo" alt="Pega logo" src="https://www.pega.com/profiles/pegasystems/themes/custom/pegas/logo.png"></p>
+
+								<h4>The page title</h4>
+								<p>The #header-title div houses the "PEGAWORLD 2015" Header h1 title and Header p subtitle.</p>
+									<div id="header-title" class="bordered col-lg-12" style="margin-bottom:20px;">
+							      		<h1>PEGAWORLD 2015</h1>
+							      		<p>June 7 - 11</p>
+						      		</div>
+
+						      	<h4>Navigation</h4>
+								<p>The navigation consist of a ul with hyperlinks. These links do nothing but enable on.click jQuery events which filters the agenda-col to suit the prefered view. Below the breakpoint of 992px this will turn into a .navbar-toggle dropdown menu</p>
+									<div id="header-title" class="bordered col-lg-12 fakebar">
+							      		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">	
+									      <ul class="nav navbar-nav navbar-right">
+									        <li id="allday-link" class="active"><a href="#">Full event</a></li>
+									        <li id="sunday-link"><a href="#">Sun June 7</a></li>
+									        <li id="monday-link"><a href="#">Mon June 8</a></li>
+									        <li id="tuesday-link"><a href="#">Tue June 9</a></li>
+									        <li id="wednesday-link"><a href="#">Wed June 10</a></li>
+									        <li id="thursday-link"><a href="#">Thu June 11</a></li>
+									      </ul>
+									    </div><!-- /.navbar-collapse -->
+						      		</div>
+								</div>
+
+								<div class="col-lg-12 "><a name="buttons" class="title-jump"><h3>Buttons</h3></a></div>
+								<div class="col-lg-12 border-bot">
+									<button class="btn btn-pega btn-xs" data-toggle="modal" data-target="#filter"> Filter categories</button>
+									The filter categories button uses the pega blue to set itself apart from the other button sets. The purpose for this is to have the user notice this as a primairy button. The styling uses the default bootstrap btn styling with a custom colour styling using the .btn-pega class.
+
+									<br><br>
+
+
+									<div class="btn-group btn-compact" data-toggle="buttons">
+									  <label class="btn btn-xs btn-default active" id="normal-view">
+									    <input type="radio" name="options" id="option1" autocomplete="off" checked> Normal view
+									  </label>
+									  <label class="btn btn-xs btn-default" id="compact-view" >
+									    <input type="radio" name="options" id="option2" autocomplete="off"> Compact view
+									  </label>
+									</div>
+									This button-group shows a set of two radio buttons styled as buttons. It is used to give the user the impression of a toggle.
+
+								</div>
+
+								<div class="col-lg-12 "><a name="modal" class="title-jump"><h3>Modal</h3></a></div>
+								<div class="col-lg-12 border-bot">
+
+								<p>The modal renders using custom css overwriting the standard boostrap 3 modal styling. The close button on the right top corner to fit the nav-toggle styling. The close modal-dimission link ("close") has a much larger surface thant he original button for improved accuracy.</p>
+								<div class="modal-dialog modal-pega">
+        <div class="modal-content">
+          <div class="modal-header">
+          	<div class="modal-title"><h5>Event categories filters</h5></div>
+          	<div class="modal-dismiss" data-dismiss="modal"><h3>X</h3></div>
+          </div>
+          <div class="modal-body">
+             	<div class="checkbox">
+				    <label>
+				      <input id="filter-travel" type="checkbox" checked>
+				      	<div class="filter-wrap"> 
+							<span class="eventicon eventicon-travel eventicon-filter-travel">T</span>
+							<span class="icon-text">Travel &amp; Registration </span>
+						</div>
+				    </label>
+			  	</div>
+			  	<div class="checkbox">
+				    <label>
+				      <input id="filter-break" type="checkbox" checked>
+				      	<div class="filter-wrap"> 
+							<span class="eventicon eventicon-break eventicon-filter-break">B</span>
+							<span class="icon-text">Breaks &amp; Meals </span>
+					  	</div>
+				    </label>
+			  	</div>
+			  	<div class="checkbox">
+				    <label>
+				      <input id="filter-pega" type="checkbox" checked>
+				      	<div class="filter-wrap"> 
+							<span class="eventicon eventicon-pega eventicon-filter-pega">P</span>
+							<span class="icon-text">PegaWorld main events </span>
+						</div>
+				    </label>
+			  	</div>
+			  	<div class="checkbox">
+				    <label>
+				      <input id="filter-mobile" type="checkbox" checked>
+				      	<div class="filter-wrap"> 
+							<span class="eventicon eventicon-mobile eventicon-filter-mobile">M</span>
+							<span class="icon-text">Mobile</span>
+						</div>
+				    </label>
+			  	</div>
+			  	<div class="checkbox">
+				    <label>
+				      <input id="filter-user" type="checkbox" checked>
+				      	<div class="filter-wrap"> 
+							<span class="eventicon eventicon-user eventicon-filter-user">U</span>
+							<span class="icon-text">User Centered Design</span>
+						</div>
+				    </label>
+			  	</div>
+			  	<div class="checkbox">
+				    <label>
+				      <input id="filter-customer" type="checkbox" checked>
+			      		<div class="filter-wrap"> 
+							<span class="eventicon eventicon-customer eventicon-filter-customer">C</span>
+							<span class="icon-text">Customer Centricity</span>
+						</div>
+				    </label>
+			  	</div>
+			  	<div class="checkbox">
+				    <label>
+				      <input id="filter-other" type="checkbox" checked>
+			      		<div class="filter-wrap"> 
+							<span class="eventicon eventicon-other eventicon-filter-other">O</span>
+							<span class="icon-text">Other</span>
+						</div>
+				    </label>
+			  	</div>
+			  	<div class="checkbox">
+				    <label>
+				      <input id="filter-other" type="checkbox" checked>
+			      		<div class="filter-wrap"> 
+							<span class="eventicon eventicon-hidden eventicon-filter-other">O</span>
+							<span class="icon-text">Hidden styling</span>
+						</div>
+				    </label>
+			  	</div>
+          </div>
+          <div class="modal-footer" data-dismiss="modal">
+            <h5>Close</h5>
+          </div>
+        </div>
+      </div>
+								</div>
+						</div>
+				</div><!-- /.col-lg8-->
+			</div>	<!-- /.row -->
+		</div> <!-- /.container-fluid -->
+
+	</div><!--/#wrapper-->
+</body>
+</html>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap.min.js"></script>
+
+    <!-- custom script -->
+    <script type="text/javascript"> 
+    	$(function() {
+
+    var $sidebar   = $("#sidebar"), 
+        $window    = $(window),
+        offset     = $sidebar.offset(),
+        topPadding = 15;
+
+    $window.scroll(function() {
+        if ($window.scrollTop() > offset.top) {
+            $sidebar.stop().animate({
+                marginTop: $window.scrollTop() - offset.top + topPadding
+            });
+        } else {
+            $sidebar.stop().animate({
+                marginTop: 0
+            });
+        }
+    });
+    
+});
+
+
+
+</script>
+
+

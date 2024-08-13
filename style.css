@@ -1,0 +1,432 @@
+/*
+Author: King Lam
+Description: CSS page styling for UI excersise Pega
+*/
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding-top: 56px;
+}
+
+@media screen and  (max-width: 768px) {
+.hide-mobile {
+	display: none !important}
+}
+
+.btn-pega {
+	color: #fff;
+    background-color: #0092f8;
+    border-color: #0092f8;
+}
+
+.btn-pega:hover {
+	color: #fff !important;
+    background-color: #0074c5;
+    border-color: #006ebb;
+}
+
+.btn-pega:active {
+	outline: 0;
+    background-image: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+    box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+    color: #fff !important;
+}
+
+
+.btn-pega:focus {
+    color: #fff !important;
+}
+    
+
+/* header styling */
+.navbar-pega {
+	background: #ffffff !important;
+	border-bottom: 1px solid #CCCCCC !important;
+	margin-bottom: 0px !important;
+	padding-left: 10px;
+}
+
+.navbar-pega a {
+	color: #000000;
+	font-size: 16px;
+	font-weight: 500;
+}
+.navbar-toggle {
+    position: relative;
+    float: right;
+    background-color: transparent;
+    background-image: none;   
+}
+
+.navbar-pega .navbar-toggle .icon-bar {
+    background-color: #0092f8;
+}
+.navbar-pega .navbar-toggle .icon-bar {
+    background-color: #0092f8;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+.navbar-toggle {
+    padding: 17.5px 10px 17.5px 15px;
+    border-left: 1px solid #ccc !important;
+}
+
+.navbar-toggle {
+    float: right;
+    border: 0 none;
+    margin-top: 0px;
+    background-color: transparent;
+}
+
+
+#logo {
+	height: 40px;
+	margin-top: 5px;
+	display: inline-block; float: left;
+}
+
+#logo {
+	margin-right: 20px;
+}
+
+#header-title {
+	display: inline-block; float: left
+}
+
+#header-title h1 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #999999;
+    display: inline-block;
+}
+
+#header-title h1, #header-title p{
+	margin-bottom: 0px;
+}
+#header-title p{
+	margin-top: 0px;
+	font-size: 12px;
+	color: #999999;
+}
+
+/*mobile and small screens*/
+@media screen and  (max-width: 768px) {
+ .navbar-nav li.active {
+ 	background-color: #0092f8 !important;
+ }
+ .navbar-nav li.active a{
+ 	color: #ffffff !important;
+ }
+
+ .btn-compact {
+ 	display: none !important;
+ }
+
+ #header-title h1 {
+    font-size: 14px;
+}
+
+}
+
+/*tablets*/
+@media (min-width: 768px) and (max-width: 960px) {
+ .nav>li>a{
+ 	padding: 10px 6px !important;
+ }
+
+ .navbar-nav li a{
+ 	font-size: 14px;
+ }
+
+ .navbar-nav li.active a{
+ 	border-bottom: 6px solid #0092f8;
+ }
+
+.navbar-nav > li > a:hover{
+    background-color:#ffffff !important;
+    color: #0092f8;
+}
+
+.btn-compact, .icon-text {
+	display: none !important;
+}
+
+}
+
+/*desktop and up*/
+@media screen and  (min-width: 960px) {
+
+
+ .navbar-nav li a{
+ 	font-size: 16px;
+ }
+
+ .navbar-nav li.active a{
+ 	border-bottom: 6px solid #0092f8;
+ }
+
+.navbar-nav > li > a:hover{
+    background-color:#ffffff !important;
+    color: #0092f8;
+}
+
+
+}
+
+/* filter bar */
+
+.filter-bar {
+	border-bottom: 1px solid #ccc;
+	padding: 10px !important;
+}
+
+
+/* event type icons */
+
+.eventicon {
+	display: block;
+	padding: 2px;
+	width: 16px;
+	height: 16px;
+	font-size: 12px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 100%;
+
+}
+
+.eventicon-travel {
+	background-color: #7f8c8d;
+	color: #ffffff;
+}
+
+.eventicon-break {
+	background-color: #16a085;
+	color: #ffffff;
+}
+
+.eventicon-pega {
+	background-color: #0092f8;
+	color: #ffffff;
+}
+
+.eventicon-mobile {
+	background-color: #000;
+	color: #ffffff;
+}
+
+.eventicon-user {
+	background-color: #d35400;
+	color: #ffffff;
+}
+
+.eventicon-customer {
+	background-color: #8e44ad;
+	color: #ffffff;
+}
+
+.eventicon-other {
+	background-color: #34495e;
+	color: #ffffff;
+}
+
+.eventicon-hidden {
+	background-color: #fff !important;
+	color: red;
+	border: 1px dashed red;
+
+}
+
+.icon-text {
+	font-size: 10pt;
+}
+
+.filter-wrap {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.filter-wrap .eventicon { display: inline-block; }
+
+
+/*agenda styling*/
+
+.agenda-label {
+	background-color: #0092f8;
+	color: #fff;
+	text-align: center;
+	display: block;
+	width: 100%
+	border-bottom: 1px solid #ccc;
+}
+
+
+.agenda-col {
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+
+.agenda-item {
+	position: relative;
+	border-bottom: 1px solid #ccc;
+}
+
+.agenda-eventicon {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.agenda-content {
+	padding: 10px 5px 10px 35px !important;
+	font-size: 10pt;
+}
+
+.agenda-content-normal {
+	padding: 10px 5px 10px 35px !important;
+}
+
+.agenda-item .agenda-time, .agenda-item .agenda-title, .agenda-item .agenda-place  {
+	display: block;
+}
+
+.agenda-time {
+	color: #7f8c8d;
+	font-weight: 500;
+}
+
+.agenda-title {
+	color: #000;
+	font-weight: normal;
+}
+
+.agenda-place {
+	color: #7f8c8d;
+
+}
+
+.split-label-mobile {
+	text-align: center;
+	background-color: #000;
+	color: #fff;
+}
+
+.split-event {
+	border-bottom: 1px solid #ccc;
+}
+.split-label-user {
+	text-align: center;
+	background-color: #d35400;
+	color: #fff;
+}
+
+.split-border {
+	border-right: 1px solid #ccc;
+}
+
+
+.split-fix-a {
+	height: 90px;
+}
+
+.split-fix-b {
+	height: 90px;
+}
+
+@media screen and  (max-width: 768px) {
+.split-fix-b {
+	height: auto;
+}
+}
+/*modal styling*/
+
+
+
+
+
+
+.modal-pega {
+	width: 300px !important;
+}
+.modal-content{
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important; 
+} 
+
+.modal-header{
+	padding: 0px !important;
+}
+
+.modal-header h5{
+	padding-top: 0px !important;
+}
+
+.modal-title {
+	display: inline-block;
+	margin-bottom: 0px !important;
+	float: left;
+
+}
+.modal-title h5{
+	margin: 10px 10px 0px 10px;
+	height: 20px;
+	font-size: 14px;
+	line-height: 80%;
+
+}
+
+.modal-dismiss {
+	margin-bottom: 0px !important;
+	float: left;
+	display: inline-block;
+	float: right;
+	width: 30px;
+	height: 30px;
+	border-left: 1px solid #ccc;
+	text-align: center;
+}
+
+.modal-dismiss h3 {
+	margin-top: 3px;
+	font-weight: normal;
+}
+
+.modal-dismiss:hover, .modal-footer:hover {
+	background-color: #0092f8;
+}
+
+.modal-dismiss:hover h3, .modal-footer:hover h5 {
+	color: #fff;
+}
+
+.modal-footer {
+	padding: 5px !important;
+	text-align: center !important; 
+}
+
+.modal-footer h5 {
+	margin: 0px !important;
+}
+
+
+/* compact view for presenters */
+
+.compact-inline {
+	display: inline !important;
+}
+
+.agenda-content-compact {
+	padding: 5px 5px 5px 35px !important;
+	font-size: 12px;
+}
+
+.split-fix-compact {
+	height: 60px !important; 
+}
